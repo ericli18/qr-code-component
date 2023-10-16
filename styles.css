@@ -78,8 +78,6 @@ html {
   --Dark-blue: hsl(218, 44%, 22%);
   font-family: 'Outfit', sans-serif;
   font-size: 15px;
-  margin: 0;
-  padding: 0;
 }
 
 body {
@@ -113,10 +111,11 @@ img {
   background-color: var(--White);
   border-radius: 0.5rem;
   box-shadow: 0 0.5rem 2rem var(--Grayish-blue);
-  width: 16.5rem;
+  max-width: 18.5rem;
+  margin: 1rem;
 }
 
-.card > div {
+.card > *:not(img) {
   text-align: center;
   color: var(--Dark-blue);
   margin-top: 1rem;
